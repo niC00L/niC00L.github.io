@@ -1,19 +1,12 @@
 import React, {Component} from 'react';
 import '../../App.css';
-import {Menu} from '../Menu/Menu';
-import {Portfolio} from '../Portfolio/Portfolio';
+import {Layout} from '../Layout/Layout';
+import {BrowserRouter} from 'react-router-dom';
 
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            items: [
-                {key: 0, slug: 'home', title: 'Home'},
-                {key: 1, slug: 'about', title: 'About'},
-                {key: 2, slug: 'portfolio', title: 'Portfolio'},
-                {key: 3, slug: 'blog', title: 'Blog'},
-                {key: 4, slug: 'contact', title: 'Contact'}
-            ],
             projects: [],
             static_pages: [],
             blog: []
@@ -40,15 +33,10 @@ class App extends Component {
     }
 
     render() {
-        console.log(this.props.location);
         return (
-            <div className="App">
-                <header className="App-header">
-                    <h1 className="App-title">They are not rocks! They are minerals</h1>
-                    <Menu items={this.state.items}/>
-                </header>
-                <Portfolio projects={this.state.projects}/>
-            </div>
+            <BrowserRouter>
+                <Layout items={this.state.items} projects={this.state.projects}/>
+            </BrowserRouter>
         );
     }
 }
