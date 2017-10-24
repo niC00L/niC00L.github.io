@@ -6,7 +6,7 @@ export class Menu extends Component {
             <div className="Menu">
                 {this.props.items.map(function (item) {
                     return (
-                        <a className="menuButton" href={item.slug}>{item.title}</a>
+                        <a key={item.key} className="menuButton" href={'/'+item.slug}>{item.title}</a>
                     );
                 })}
             </div>
