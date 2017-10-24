@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import logo from '../../logo.svg';
 import '../../App.css';
 import {Menu} from '../Menu/Menu';
 import {Project} from '../Project/Project';
@@ -10,7 +9,10 @@ class App extends Component {
         this.state = {
             items: [
                 {slug: 'home', title: 'Home'},
-                {slug: 'about', title: 'About'}
+                {slug: 'about', title: 'About'},
+                {slug: 'portfolio', title: 'Portfolio'},
+                {slug: 'blog', title: 'Blog'},
+                {slug: 'contact', title: 'Contact'}
             ],
             project: {
                 titleImage: {src: './img/image.jpg', alt: 'testImage'},
