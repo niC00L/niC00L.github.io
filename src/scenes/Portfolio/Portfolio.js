@@ -2,7 +2,7 @@
  * Created by niC00L on 24/10/17.
  */
 import React, {Component} from 'react';
-import Api from '../../api';
+import Api from '../../services/Api/Api';
 
 export class Portfolio extends Component {
     constructor(props) {

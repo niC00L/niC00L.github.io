@@ -24,9 +24,8 @@ const Api = {
         //         console.log("ITEMSSS", response);
         //         console.log("ITEMS", this.items);
         //     });
-        var pes = JSON.parse("./json/" + folder + '/' + lang + '.json');
+        this.items = JSON.parse("./json/" + folder + '/' + lang + '.json');
         console.log("ITEMS", this.items);
-        console.log("pes", pes);
         return this.items;
     }
 };
