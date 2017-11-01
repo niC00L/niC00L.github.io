@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import Api from '../../services/Api/Api';
-import styles from './Menu.css';
+import styles from './Menu.scss';
 
 export class Menu extends Component {
     items = Api.menu;
