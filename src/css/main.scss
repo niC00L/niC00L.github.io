@@ -1,0 +1,12 @@
+.gradient {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #580761;
+  background: -moz-radial-gradient(center, ellipse cover, hsla(294,87%,20%,1) 0%, hsla(287,73%,16%,1) 29%, hsla(282,68%,9%,1) 68%);
+  background: -webkit-radial-gradient(center, ellipse cover, hsla(294,87%,20%,1) 0%,hsla(287,73%,16%,1) 29%,hsla(282,68%,9%,1) 68%);
+  background: radial-gradient(ellipse at center, hsla(294,87%,20%,1) 0%,hsla(287,73%,16%,1) 29%,hsla(282,68%,9%,1) 68%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#580761', endColorstr='#1c0725',GradientType=1 );
+}
