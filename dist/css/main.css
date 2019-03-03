@@ -16,8 +16,8 @@ body {
 }
 
 .logo {
-  height: 25vmin;
-  margin-bottom: 6vmin;
+  width: 32vw;
+  margin-bottom: 6vh;
 }
 
 .center {
@@ -41,5 +41,14 @@ body {
 }
 
 .social a img {
-  width: 6vmin;
+  width: 3vw;
+}
+
+@media screen and (orientation: portrait) {
+  .logo {
+    width: 80vw;
+  }
+  .social a img {
+    width: 10vw;
+  }
 }
