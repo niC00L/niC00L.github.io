@@ -5,7 +5,7 @@
   "author": "Tomas Vestenicky",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "2.24.5",
+    "browser-sync": "2.27.10",
     "gulp": "^3.9.1",
     "gulp-clean-css": "3.9.4",
     "gulp-concat": "^2.6.1",
