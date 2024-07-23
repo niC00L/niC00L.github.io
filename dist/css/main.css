@@ -254,7 +254,8 @@ body {
 	}
 	
 	.contact-button {
-		bottom: 5dvh;
+		bottom: auto;
+		top: 85dvh;
 		width: 60dvw;
 		text-align: center;
 		font-size: 3dvh;
