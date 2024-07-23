@@ -172,7 +172,7 @@ body {
 }
 .hero-item.designer {
 	background-image: url("../img/design.png");
-	background-position: 20% center;
+	background-position: center;
 	background-size: cover;
 }
 .hero-item.photographer {
@@ -254,10 +254,10 @@ body {
 	}
 	
 	.contact-button {
-		bottom: 6dvh;
+		bottom: 5dvh;
 		width: 60dvw;
 		text-align: center;
-		font-size: 1.5em;
+		font-size: 3dvh;
 		background-color: black;
 	}
   
@@ -281,13 +281,13 @@ body {
 		align-items: end;
 	}
 	.hero-item.designer.inactive h2 {
-		bottom: 1em;
+		bottom: 3dvh;
 	}
 	.hero-item.designer h2 {
-		bottom: 2em;
+		bottom: 5dvh;
 	}
 	.hero-item.designer.active .container {
-		padding-top: d10vh;
+		padding-top: 10dvh;
 	}
 	.hero-item.photographer {
 		height: 25dvh;
@@ -301,13 +301,13 @@ body {
 		height: 25dvh;
 	}
 	.hero-item.artist h2 {
-		top: 1.3em;
+		top: 3dvh;
 	}
 	.hero-item.artist.active h2 {
 		top: auto;
 	}
 	.hero-item.artist.inactive h2 {
-		top: .8em;
+		top: 1.5dvh;
 	}
 	.hero-item h2 {
 		top: auto;
@@ -319,7 +319,8 @@ body {
 		align-items: stretch;
 	}
 	.hero-item.active h2 {
-		font-size: 1.8em;
+		font-size: 1.4em;
+		margin-bottom: 0;
 	}
 	.hero-item.inactive {
 		height: 15dvh;
@@ -327,14 +328,15 @@ body {
 	}
 	.hero-item.active .container {
 		padding: 1em 0;
-		width: 85%;
+		width: 90%;
 	}
 	
 	.social {
 		width: 100%;
+		padding: 2dvh 0;
 	}
 	.social-link {
-		font-size: 1.5em;
+		font-size: 3dvh;
 	}
 	.social-link span {
 		display: none;
