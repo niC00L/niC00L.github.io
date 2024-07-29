@@ -1,0 +1,17 @@
+{
+  "manufacturer": "Honda",
+  "cars": [
+    {
+      "name": "CivicV",
+      "file": "CivicV.png"
+    },
+    {
+      "name": "CivicVI",
+      "file": "CivicVI.png"
+    },
+    {
+      "name": "CivicVII",
+      "file": "CivicVII.png"
+    }    
+  ]
+}
