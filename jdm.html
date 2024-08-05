@@ -1,39 +1,72 @@
 <html>
   <head>
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+	    <title>JDM Suveniry</title>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-
+	<link rel="stylesheet" type="text/css" href="dist/css/jdm.css">
     <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
 
   </head>
   <body>
+	<div class="container">
 
-    <h1>Gallery made with nanogallery2</h1>
+		<div class="hero">
+			<h1>JDM suveníry</h1>
+			<img src="dist/img/jdm/hero.jpg" alt="JDM suveniry">
+		</div>
+		<div class="text">
+			<p>
+				Vyrábame rôzny textil a iné darčekové predmety s potlačou japonských áut. Každý návrh je autorskou tvorbou <a href="https://www.nicool.rocks">niC00L</a>, 
+				ktorá je milovník japonských áut a vo voľnom čase rada kreslí a maľuje.
+			</p>
+			<p>
+				V prípade záujmu o nákup darčekových predmetov nás môžete kontaktovať na <a href="mailto:shop@nicool.rocks">shop@nicool.rocks</a> 
+				alebo na <a href="https://www.facebook.com/ilustraceOdNicool" target="blank">Facebooku</a>.
+			</p>
+			<p>
+				Ak máte o nejaký produkt záujem, ale nenašli ste design Vášho vysnívaného auta, môžete nám to dať vedieť vyplnením krátkeho
+				<a href="https://forms.gle/dEDeR3AdCrUkQqJZ6" target="blank">dotazníka</a> a až bude daný návrh k dispozícii oznámime Vám to e-mailom.
+			</p>
+		</div>
+		<h2>Vzory áut</h2>
+		<div id="jdm"></div>
+		<div class="footer">
+			&copy; <a href="https://www.nicool.rocks" target="blank">niC00L</a> 2024
+		</div>
+	</div>	
+	<script>
+	$("#jdm").nanogallery2({
+		// ### gallery settings ###
+		thumbnailHeight:  200,
+		thumbnailWidth:   200,
+		thumbnailL1Width:   300,
+		thumbnailL1Height:   300,
+		itemsBaseURL:     'http://nicool.rocks/dist/img/jdm/',
 
-    <div ID="jdm" data-nanogallery2='{
-        "itemsBaseURL": "http://nicool.rocks/dist/img/jdm/",
-        "thumbnailWidth": "200",
-        "thumbnailBorderVertical": 0,
-        "thumbnailBorderHorizontal": 0,
-        "thumbnailLabel": {
-          "position": "overImageOnTop"
-        },
-        "thumbnailHoverEffect2": "toolsSlideDown",
-        "thumbnailAlignment": "center",
-        "displayBreadcrumb": false,
-        "breadcrumbAutoHideTopLevel": false,
-        "breadcrumbOnlyCurrentLevel": false,
-        "galleryFilterTags": "description",
-        "thumbnailLevelUp": true,
-        "thumbnailOpenImage": false
-      }'>
-      <a href="Honda/CivicV.png" data-ngthumb="Honda/CivicV.png" data-ngdesc="#honda">Honda Civic V</a>
-      <a href="Honda/CivicVI.png" data-ngthumb="Honda/CivicVI.png" data-ngdesc="#honda">Honda Civic VI</a>
-      <a href="Honda/CivicVII.png" data-ngthumb="Honda/CivicVII.png" data-ngdesc="#honda">Honda Civic VII</a>
+		// ### gallery content ###
+		items: [
+			//Honda
+			{ src: 'Honda/CivicV.png', title: 'Honda',  ID: 1,	kind:'album' },
+			{ src: 'Honda/CivicV.png', srct: 'Honda/CivicV.png', title: 'Honda Civic V', ID: 10, albumID: 1 },
+			{ src: 'Honda/CivicVI.png', srct: 'Honda/CivicVI.png', title: 'Honda Civic VI', ID: 11, albumID: 1 },
+			{ src: 'Honda/CivicVII.png', srct: 'Honda/CivicVII.png', title: 'Honda Civic VII', ID: 12, albumID: 1 },
 
-    </div>
+			// Mazda
+			{	src: 'image_02.jpg',                         title: 'Mazda',  ID: 2,  kind:'album' },
+			{ src: 'image_01.jpg', srct: 'image_01ts.jpg', title: 'image B1', ID: 20, albumID: 2 },
+			
+			{	src: 'image_02.jpg',                         title: 'Mitsubishi',  ID: 3,  kind:'album' },
+			{ src: 'image_01.jpg', srct: 'image_01ts.jpg', title: 'image B1', ID: 20, albumID: 2 },
+			
+			{	src: 'image_02.jpg',                         title: 'Nissan',  ID: 4,  kind:'album' },
+			
+			{	src: 'image_02.jpg',                         title: 'Toyota',  ID: 5,  kind:'album' },
+			
+		]
+	});
+	</script>
     
   </body>
 </html>
