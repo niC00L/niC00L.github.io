@@ -12,85 +12,334 @@
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	font-family: 'Montserrat', sans-serif;
 }
 
-.logo {
-  width: 32vw;
-  margin-bottom: 6vh;
+
+
+/* NEW STYLES */
+
+
+.hero {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	color: white;
+	background-color: gray;
+}
+.hero .logo {
+	position: absolute;	
+	left: 50%;
+	top: 22vh;
+	height: 35vh;
+	z-index: 3;
+	transform: translate(-50%,0);
+	pointer-events:none;
+	transition: all .2s ease;
 }
 
-.center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.hero .logo.active {	
+	left: 50%;
+	top: 5vh;
+	height: 6vh;
+	z-index: 3;
+	transform: translate(-50%,0);
+	pointer-events:none;
 }
+
+.hero-group {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	overflow: hidden;
+}
+.hero-item {
+	position: relative;
+	padding: 1.5rem;
+	width: 33%;
+	transition: all .2s ease;
+	overflow: hidden;
+}
+
+.hero-item.active {
+	/*position: absolute;*/
+	top: 0;
+	left: 0;
+	width: 70%;
+	height: 100%;
+	padding: 0;
+	text-align: left !important;
+}
+
+.hero-item:not(.active) {
+	cursor: pointer;
+}
+
+.hero-item.inactive {
+	width: 15%;	
+}
+
+.hero-item.inactive h2 {
+	font-size: 1.3rem;
+}
+
+.hero-item:nth-child(1) {
+	text-align: right;
+}
+.hero-item:nth-child(2) {
+	text-align: center;
+}
+.hero-item .content {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	transition: height .2s ease .2s;
+}
+.hero-item .container {
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+
+
+.back-button {
+	position: absolute; 
+	z-index: 5;
+	top: 0em;
+	right: 0em;
+	cursor: pointer;
+	opacity: 0;
+	font-size: 2rem;
+	transition: all .2s ease;
+	padding: .8em;
+	pointer-events: none;
+}
+.back-button.active {
+	opacity: 1;
+	pointer-events: all;
+}
+.back-button:hover {
+	transform: scale(1.2);
+}
+
+.hero-item.active .content {
+	width: 100%;
+	height: 60vh;	
+}
+.hero-item.active .container {
+	width: 70%;
+	margin: 0 auto;
+	padding: 15vh 0;
+}
+.hero-item.active h2 {
+	top: 0;
+	font-weight: 1000;	
+}
+
+.hero-item h2 {
+	position: relative;
+	top: 50vh;
+	color: white;
+	font-size: 1.8rem;
+	font-weight: 10;	
+	text-transform: uppercase;
+	transition: all .2s ease;
+	margin-bottom: .3em;
+}
+.hero-item::before {
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: .3;
+	transition: .2s
+}
+.hero-item.active::before {
+	opacity: .7;
+}
+.hero-item.designer {
+	background-image: url("../img/design.png");
+	background-position: center;
+	background-size: cover;
+}
+.hero-item.photographer {
+	background-image: url("../img/photo.jpg");
+	background-position: 30% center;
+	background-size: cover;
+}
+.hero-item.artist {
+	background-image: url("../img/art.jpg");
+	background-position: 20% center;
+	background-size: cover;
+}
+
+.contact-button {
+	position: absolute;	
+	left: 50%;
+	bottom: 5vh;
+	z-index: 3;
+	color: white;
+	font-size: 1.2rem;
+	text-decoration: none;
+	border: .2em solid white;
+	padding: .5em 1em;
+	border-radius: 2em;
+	transform: translate(-50%,0);	
+	transition: all .2s ease;
+}
+
+.contact-button:hover {
+	transform: translate(-50%,0) scale(1.1);	
+	background-color: white;
+	color: black;
+}
+
 
 .social {
-  display: flex;
-  justify-content: space-around;
-  width: 90%;
+	display: flex;
+	justify-content: space-around;
+	width: 90%;
+	align-items: center;
+	padding: 1.5em 0;
 }
 
-.social a {
-  position: relative;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: column;
-  transition: .25s;
-  text-decoration: none;
-  text-align: center;
-  padding-bottom: 1em;
+.social-link {
+	position:relative;
+	display:flex;
+	align-content:center;
+	justify-content:center;
+	flex-direction:column;
+	text-align:center;
+	color: white;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 1.2rem;
+	vertical-align: middle;
+	transition: all .2s ease;
 }
 
-.social a:hover img {
-  opacity: .6;
+.social-link:hover {
+	transform: scale(1.2);
 }
 
-.social a:hover .tooltip {
-  opacity: .6;
-}
-
-.social a img {
-  width: 3vw;
-}
-
-.social .tooltip {
-  opacity: 0;
-  position: absolute;
-  bottom: -2.2em;
-  display: flex;
-  align-self: center;
-  padding: .5em 1em;
-  color: black;
-  background-color: white;
-  border-radius: 1.2em;
-  transition: .25s;
-}
-
-.social .tooltip:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: -.45em;
-  display: flex;
-  align-self: center;
-  width: 0;
-  height: 0;
-  margin-left: -.5em;
-  border-style: solid;
-  border-width: 0 .5em .5em .5em;
-  border-color: transparent transparent white transparent;
+.social-link i {
+	font-size: 1.8em;
+	margin-bottom: .2em;
 }
 
 @media screen and (orientation: portrait) {
-  .logo {
-    width: 80vw;
-  }
-  .social a img {
-    width: 10vw;
-  }
+	.hero .logo {
+		height: auto;
+		width: 60dvw;
+		top: 8dvh;
+	}
+	
+	.hero .logo.active {
+		height: auto;
+		width: 30dvw;
+		top: 3dvh;
+	}
+	
+	.contact-button {
+		bottom: auto;
+		top: 85dvh;
+		width: 60dvw;
+		text-align: center;
+		font-size: 3dvh;
+		background-color: black;
+	}
+  
+	.hero-group {
+		flex-direction: column;
+	}
+
+	.hero-item {
+		display: flex;
+		align-items: stretch;
+		width: 100%;
+		text-align: center !important;
+		padding: 0;
+	}
+	.hero-item.designer {
+		height: 40dvh;
+		align-items: end;
+	}
+	.hero-item.designer.inactive {
+		height: 20dvh;
+		align-items: end;
+	}
+	.hero-item.designer.inactive h2 {
+		bottom: 3dvh;
+	}
+	.hero-item.designer h2 {
+		bottom: 5dvh;
+	}
+	.hero-item.designer.active .container {
+		padding-top: 10dvh;
+	}
+	.hero-item.photographer {
+		height: 25dvh;
+		align-items: center;
+	}
+	.hero-item.artist {
+		height: 35dvh;
+		align-items: start;
+	}
+	.hero-item.artist.inactive {
+		height: 25dvh;
+	}
+	.hero-item.artist h2 {
+		top: 3dvh;
+	}
+	.hero-item.artist.active h2 {
+		top: auto;
+	}
+	.hero-item.artist.inactive h2 {
+		top: 1.5dvh;
+	}
+	.hero-item h2 {
+		top: auto;
+		font-size: 2em;
+	}	
+	.hero-item.active {
+		height: 70dvh;	
+		width: 100%;
+		align-items: stretch;
+	}
+	.hero-item.active h2 {
+		font-size: 1.4em;
+		margin-bottom: 0;
+	}
+	.hero-item.inactive {
+		height: 15dvh;
+		width: 100%;
+	}
+	.hero-item.active .container {
+		padding: 1em 0;
+		width: 90%;
+	}
+	
+	.social {
+		width: 100%;
+		padding: 2dvh 0;
+	}
+	.social-link {
+		font-size: 3dvh;
+	}
+	.social-link span {
+		display: none;
+	}
 }
