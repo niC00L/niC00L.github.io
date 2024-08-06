@@ -44,6 +44,22 @@
 		thumbnailL1Width:   300,
 		thumbnailL1Height:   300,
 		itemsBaseURL:     'http://nicool.rocks/dist/img/jdm/',
+		galleryTheme: {
+		thumbnail :             { 
+			background: '#444', 
+			backgroundImage: 'linear-gradient(315deg, lightgray 0%, #445 90%)', 
+			borderColor: 'lightgray', 
+			borderRadius: '10px', 
+			labelOpacity : 1, 
+			labelBackground: 'rgba(0,0,0,0)', 
+			titleColor: '#000', 
+			titleBgColor: 'transparent', 
+			titleShadow: 'none', 
+			descriptionColor: '#ccc', 
+			descriptionBgColor: 'transparent', 
+			descriptionShadow: '', 
+			stackBackground: '#aaa' }
+		},
 
 		// ### gallery content ###
 		items: [
@@ -75,8 +91,8 @@
 			{	src: 'Mazda/3I.jpg',                         title: 'Mazda',  ID: 3,  kind:'album' },
 			{ src: 'Mazda/3I.jpg', srct: 'Mazda/3I-thumb.jpg', title: 'Mazda 3 I', ID: 300, albumID: 3 },
 			{ src: 'Mazda/3III.jpg', srct: 'Mazda/3III-thumb.jpg', title: 'Mazda 3 III', ID: 301, albumID: 3 },
-			{ src: 'Mazda/323FI.jpg', srct: 'Mazda/323FI-thumb.jpg', title: 'Mazda 323F I', ID: 302, albumID: 3 },
-			{ src: 'Mazda/323FII.jpg', srct: 'Mazda/323FII-thumb.jpg', title: 'Mazda 323F II', ID: 303, albumID: 3 },
+			{ src: 'Mazda/323f.jpg', srct: 'Mazda/323f-thumb.jpg', title: 'Mazda 323F I', ID: 302, albumID: 3 },
+			{ src: 'Mazda/323fII.jpg', srct: 'Mazda/323fII-thumb.jpg', title: 'Mazda 323F II', ID: 303, albumID: 3 },
 			{ src: 'Mazda/Cosmo.jpg', srct: 'Mazda/Cosmo-thumb.jpg', title: 'Mazda Cosmo', ID: 304, albumID: 3 },
 			{ src: 'Mazda/CX7.jpg', srct: 'Mazda/CX7-thumb.jpg', title: 'Mazda CX-7', ID: 305, albumID: 3 },
 			{ src: 'Mazda/MX5NA.jpg', srct: 'Mazda/MX5NA-thumb.jpg', title: 'Mazda MX-5 NA', ID: 306, albumID: 3 },
@@ -85,30 +101,30 @@
 			{ src: 'Mazda/MX3.jpg', srct: 'Mazda/MX3-thumb.jpg', title: 'Mazda MX-3', ID: 309, albumID: 3 },
 			{ src: 'Mazda/RX7FD.jpg', srct: 'Mazda/RX7FD-thumb.jpg', title: 'Mazda RX-7 FD', ID: 310, albumID: 3 },
 			{ src: 'Mazda/RX7FC.jpg', srct: 'Mazda/RX7FC-thumb.jpg', title: 'Mazda RX-7 FD', ID: 311, albumID: 3 },
-			{ src: 'Mazda/RX8.jpg', srct: 'Mazda/RX8-thumb.jpg', title: 'Mazda RX-8', ID: 312, albumID: 3 },
+			{ src: 'Mazda/rx8.jpg', srct: 'Mazda/rx8-thumb.jpg', title: 'Mazda RX-8', ID: 312, albumID: 3 },
 			
 			// Mitsubishi
-			{	src: 'Mitsubishi/EVOIX.jpg',                         title: 'Mitsubishi',  ID: 4,  kind:'album' },
+			{	src: 'Mitsubishi/EvoIX.jpg',                         title: 'Mitsubishi',  ID: 4,  kind:'album' },
 			{ src: 'Mitsubishi/ASXII.jpg', srct: 'Mitsubishi/ASXII-thumb.jpg', title: 'Mitsubishi ASX II', ID: 400, albumID: 4 },
 			{ src: 'Mitsubishi/ASXIII.jpg', srct: 'Mitsubishi/ASXIII-thumb.jpg', title: 'Mitsubishi ASX III', ID: 401, albumID: 4 },
 			{ src: 'Mitsubishi/Carisma.jpg', srct: 'Mitsubishi/Carisma-thumb.jpg', title: 'Mitsubishi Carisma', ID: 402, albumID: 4 },
-			{ src: 'Mitsubishi/EvoVIII.jpg', srct: 'Mitsubishi/EvoVIII-thumb.jpg', title: 'Mitsubishi Lancer Evo VIII', ID: 403, albumID: 4 },
-			{ src: 'Mitsubishi/EvoIX.jpg', srct: 'Mitsubishi/EvoIX-thumb.jpg', title: 'Mitsubishi Lancer Evo IX', ID: 404, albumID: 4 },
-			{ src: 'Mitsubishi/EVOX.jpg', srct: 'Mitsubishi/EvoX-thumb.jpg', title: 'Mitsubishi Lancer Evo X', ID: 405, albumID: 4 },
+			{ src: 'Mitsubishi/EvoVIII.jpg', srct: 'Mitsubishi/EvoVIII-thumb.jpg', title: 'Mitsubishi Evo VIII', ID: 403, albumID: 4 },
+			{ src: 'Mitsubishi/EvoIX.jpg', srct: 'Mitsubishi/EvoIX-thumb.jpg', title: 'Mitsubishi Evo IX', ID: 404, albumID: 4 },
+			{ src: 'Mitsubishi/EVOX.jpg', srct: 'Mitsubishi/EvoX-thumb.jpg', title: 'Mitsubishi Evo X', ID: 405, albumID: 4 },
 			{ src: 'Mitsubishi/FTO.jpg', srct: 'Mitsubishi/FTO-thumb.jpg', title: 'Mitsubishi FTO', ID: 406, albumID: 4 },
 			{ src: 'Mitsubishi/Pajero.jpg', srct: 'Mitsubishi/Pajero-thumb.jpg', title: 'Mitsubishi Pajero', ID: 407, albumID: 4 },
 			{ src: 'Mitsubishi/SpaceStar.jpg', srct: 'Mitsubishi/SpaceStar-thumb.jpg', title: 'Mitsubishi Space Star', ID: 408, albumID: 4 },
 			
 			// Nissan
-			{	src: 'Nissan/R34.jpg',                         title: 'Nissan',  ID: 5,  kind:'album' },
+			{	src: 'Nissan/r34.jpg',                         title: 'Nissan',  ID: 5,  kind:'album' },
 			{ src: 'Nissan/180sx.jpg', srct: 'Nissan/180sx-thumb.jpg', title: 'Nissan 180SX', ID: 500, albumID: 5 },
 			{ src: 'Nissan/240z.jpg', srct: 'Nissan/240z-thumb.jpg', title: 'Nissan 240Z', ID: 501, albumID: 5 },
 			{ src: 'Nissan/280z.jpg', srct: 'Nissan/280z-thumb.jpg', title: 'Nissan 280Z', ID: 502, albumID: 5 },
 			{ src: 'Nissan/300zx.jpg', srct: 'Nissan/300zx-thumb.jpg', title: 'Nissan 300ZX', ID: 503, albumID: 5 },
 			{ src: 'Nissan/370z.jpg', srct: 'Nissan/370z-thumb.jpg', title: 'Nissan 370Z', ID: 504, albumID: 5 },
 			{ src: 'Nissan/Z.jpg', srct: 'Nissan/Z-thumb.jpg', title: 'Nissan Z', ID: 505, albumID: 5 },
-			{ src: 'Nissan/gtrii.jpg', srct: 'Nissan/gtrii-thumb.jpg', title: 'Nissan Skyline GT-R II', ID: 506, albumID: 5 },
-			{ src: 'Nissan/r34.jpg', srct: 'Nissan/r34-thumb.jpg', title: 'Nissan Skyline GT-R R34', ID: 507, albumID: 5 },
+			{ src: 'Nissan/gtrII.jpg', srct: 'Nissan/gtrII-thumb.jpg', title: 'Nissan GT-R II', ID: 506, albumID: 5 },
+			{ src: 'Nissan/r34.jpg', srct: 'Nissan/r34-thumb.jpg', title: 'Nissan GT-R R34', ID: 507, albumID: 5 },
 			{ src: 'Nissan/R35.jpg', srct: 'Nissan/R35-thumb.jpg', title: 'Nissan GT-R R35', ID: 508, albumID: 5 },
 			{ src: 'Nissan/S13.jpg', srct: 'Nissan/S13-thumb.jpg', title: 'Nissan Silvia S13', ID: 509, albumID: 5 },
 			{ src: 'Nissan/S14.jpg', srct: 'Nissan/S14-thumb.jpg', title: 'Nissan Silvia S14', ID: 510, albumID: 5 },
@@ -117,10 +133,10 @@
 			// Subaru
 			{	src: 'Subaru/WRXIV.jpg',                         title: 'Subaru',  ID: 6,  kind:'album' },
 			{ src: 'Subaru/BRZ.jpg', srct: 'Subaru/BRZ-thumb.jpg', title: 'Subaru BR-Z', ID: 600, albumID: 6 },
-			{ src: 'Subaru/WRXI.jpg', srct: 'Subaru/WRXI-thumb.jpg', title: 'Subaru Impreza WRX STI I', ID: 601, albumID: 6 },
-			{ src: 'Subaru/WRXIV.jpg', srct: 'Subaru/WRXIV-thumb.jpg', title: 'Subaru Impreza WRX STI IV', ID: 602, albumID: 6 },
-			{ src: 'Subaru/WRXV.jpg', srct: 'Subaru/WRXV-thumb.jpg', title: 'Subaru Impreza WRX STI V', ID: 603, albumID: 6 },
-			{ src: 'Subaru/WRXVI.jpg', srct: 'Subaru/WRXVI-thumb.jpg', title: 'Subaru Impreza WRX STI VI', ID: 604, albumID: 6 },
+			{ src: 'Subaru/WRXI.jpg', srct: 'Subaru/WRXI-thumb.jpg', title: 'Subaru WRX STI I', ID: 601, albumID: 6 },
+			{ src: 'Subaru/WRXIV.jpg', srct: 'Subaru/WRXIV-thumb.jpg', title: 'Subaru WRX STI IV', ID: 602, albumID: 6 },
+			{ src: 'Subaru/WRXV.jpg', srct: 'Subaru/WRXV-thumb.jpg', title: 'Subaru WRX STI V', ID: 603, albumID: 6 },
+			{ src: 'Subaru/WRXVI.jpg', srct: 'Subaru/WRXVI-thumb.jpg', title: 'Subaru WRX STI VI', ID: 604, albumID: 6 },
 			
 			// Suzuki
 			{	src: 'Suzuki/Swift.jpg',                         title: 'Suzuki',  ID: 7,  kind:'album' },
@@ -131,7 +147,7 @@
 			
 			// Toyota
 			{	src: 'Toyota/AE86.jpg',                         title: 'Toyota',  ID: 8,  kind:'album' },
-			{ src: 'Toyota/2000GT.jpg', srct: 'Toyota/2000GT-thumb.jpg', title: 'Toyota 2000GT', ID: 800, albumID: 8 },
+			{ src: 'Toyota/2000gt.jpg', srct: 'Toyota/2000gt-thumb.jpg', title: 'Toyota 2000GT', ID: 800, albumID: 8 },
 			{ src: 'Toyota/AE86.jpg', srct: 'Toyota/AE86-thumb.jpg', title: 'Toyota AE86 Trueno', ID: 801, albumID: 8 },
 			{ src: 'Toyota/CelicaV.jpg', srct: 'Toyota/CelicaV-thumb.jpg', title: 'Toyota Celica V', ID: 802, albumID: 8 },
 			{ src: 'Toyota/CelicaVI.jpg', srct: 'Toyota/CelicaVI-thumb.jpg', title: 'Toyota Celica VI', ID: 803, albumID: 8 },
